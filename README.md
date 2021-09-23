@@ -1,0 +1,2 @@
+# AppsPresencial
+.NetCore
