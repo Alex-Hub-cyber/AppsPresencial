@@ -1,0 +1,35 @@
+﻿@model AppsPresencial.Models.ClsValidez
+
+
+<h1 style="color:red">HOLA PORFAVOR INGRESE SUS DATOS </h1>
+<br />
+<br />
+
+@using (Html.BeginForm("Index", "Registro", FormMethod.Post))
+{
+    @Html.LabelFor(N => N.Nombre)
+    @Html.TextBoxFor(N => N.Nombre)
+    @Html.ValidationMessageFor(N => N.Nombre,null)
+    <br />
+    <br />
+
+
+    @Html.LabelFor(E => E.Edad)
+    @Html.TextBoxFor(E => E.Edad)
+    @Html.ValidationMessageFor(E =>E.Edad)
+    <br />
+    <br />
+
+    @Html.LabelFor(S => S.Sexo,null)
+    @Html.TextBoxFor(S => S.Sexo,null)
+    @Html.ValidationMessageFor(S => S.Sexo,null)
+    <br />
+    <br />
+    @Html.LabelFor(T=> T.TipoDeEstudio,null)
+    @Html.TextBoxFor(T => T.TipoDeEstudio,null)
+    @Html.ValidationMessageFor(T => T.TipoDeEstudio,null)
+    <br />
+    <br />
+
+    <input style="color:red" type="submit"/>
+}
